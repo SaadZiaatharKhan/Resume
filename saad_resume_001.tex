@@ -1,0 +1,243 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.65in} % shifts content left
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}       % adds 0.65in to both sides (total +1.3in)
+\addtolength{\topmargin}{-0.75in} % Makes the top margin smaller
+\addtolength{\textheight}{1.5in}  % Expands the text area further down the page
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-8pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-7pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-8pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Saad Khan} \\ \vspace{1pt}
+    \small +91 9503665424 $|$ \href{mailto:saadziaatharkhan@gmail.com}{\underline{saadziaatharkhan@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/saadziakhan}{\underline{linkedin.com/in/saadziakhan}} $|$
+    \href{https://github.com/SaadZiaatharKhan}{\underline{github.com/SaadZiaatharKhan}}
+\end{center}
+
+%-----------EDUCATION-----------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sinhgad College of Engineering}{Pune, Maharashtra}
+      {Bachelor of Engineering in Computer Science, Minor in Data Science}{Aug. 2023 -- May 2027}
+      \resumeItemListStart
+        \resumeItem{\textit{Coursework: DSA, OS, DBMS, Networks, OOD} $|$ \textit{CP: 300+ problems solved}}
+      \resumeItemListEnd
+    \resumeSubheading
+      {School of Scholars}{Nagpur, Maharashtra}
+      {Higher Secondary Education}{2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mobile Application Developer}{Jan. 2026 -- June 2026}
+      {InvizioX}{Mumbai, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Developed and optimized a cross-platform client application using React Native and Expo, reducing application load time by 30\% through component and asset optimization}
+        \resumeItem{Architected 7+ modules for dashboards, portfolios, and transactions, reducing navigation time by 25\%}
+        \resumeItem{Created real-time analytics dashboards using WebSockets, improving portfolio monitoring efficiency by 40\%}
+        \resumeItem{Designed a reusable UI component system and automated build workflow using NativeWind CSS and Expo EAS, reducing feature development time by 30\%}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+    % \resumeSubheading
+    %   {Frontend Web Developer}{July 2025 -- Sep. 2025}
+    %   {EntreprenuerEdge}{Pune, Maharashtra}
+    %   \resumeItemListStart
+    %     \resumeItem{Developed responsive web interfaces using React.js, Next.js, and Tailwind CSS, improving user engagement by 35\%}
+    %     \resumeItem{Optimized frontend performance and codebase, reducing page load times by 40\%}
+    %     \resumeItem{Built reusable React components and integrated REST APIs for seamless user experiences}
+    %     \resumeItem{Delivered a production-ready MVP within 3 weeks, meeting client requirements and project deadlines.}
+    % \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Web Developer}{Nov. 2023 -- April 2024}
+      {E-Cell SCOE}{Pune, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Delivered full-stack applications for 3+ startups using React.js, Next.js, Node.js, Express.js, and Flask}
+        \resumeItem{Crafted responsive interfaces using React.js, JavaScript, CSS, and GSAP, improving conversion rates by 30\%}
+        \resumeItem{Integrated MongoDB, SQL, Firebase, and Docker, improving query performance by 35\%}
+        \resumeItem{Delivered 4 product launches and 10+ feature enhancements across client projects}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{{\href{https://github.com/SaadZiaatharKhan/Agriguardian}{\underline{AgriGuardian: AI Crop Disease Detection}}}} $|$ \emph{React Native, FastAPI, Python, OpenCV, TensorFlow, Supabase}}{}
+\resumeItemListStart
+\resumeItem{Built an AI-powered agriculture platform using React Native, FastAPI, and Supabase for crop monitoring}
+\resumeItem{Developed a Python-based backend using FastAPI to serve a CNN-based image classification model (VGG16,
+InceptionV3, ResNet50), achieving 94\% disease detection accuracy}
+\resumeItem{Processed and analyzed sensor data from 6+ IoT devices alongside weather data to generate recommendations}
+\resumeItem{Applied design principles to structure a modular backend supporting multi-language output for 15 languages}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/SaadZiaatharKhan/KMRL}{\underline{Document Intelligence Hub}}} $|$ \emph{Next.js, FastAPI, LangChain, FAISS, MySQL, Hugging Face}}{}
+\resumeItemListStart
+\resumeItem{Developed an multimodal Retrieval-Augmented Generation (RAG) platform supporting PDF, image and audio retrieval}
+\resumeItem{Built OCR, speech-to-text, and vector search pipelines using FAISS, LangChain, Whisper, and Hugging Face}
+\resumeItem{ Implemented citation-backed semantic search using FastAPI, MySQL, Gemma, and Mistral}
+\resumeItem{Designed a scalable architecture for secure offline knowledge retrieval and cross-modal search}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/SaadZiaatharKhan/EchoGuide}{\underline{EchoGuide: AI Vision Assistant}}} $|$ \emph{Python, Computer Vision, YOLOv8, OpenCV, PyTorch, Deep Learning}}{}
+\resumeItemListStart
+\resumeItem{Designed \& implemented voice-assisted navigation tool, boosting visually impaired user mobility accuracy by 85\%}
+\resumeItem{Developed Python-based computer vision scripts using YOLOv8 and OpenCV, achieving 92\% object detection
+accuracy for real-time obstacle alerts}
+\resumeItem{Built and tested a face recognition module in Python, reaching 95\% detection accuracy for contextual feedback}
+% \resumeItem{Integrated Python-based AI services with ESP32 hardware components, applying structured testing to validate a 3-component system architecture}
+\resumeItemListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{\item{
+\textbf{Languages}{: Java, C++, Python, JavaScript, TypeScript} \\
+\textbf{Core CS}{:  Object-Oriented Programming (OOP), Data Structures \& Algorithms, Database Management, Operating Systems, Software Engineering Principles, System Design, Computer Networks
+} \\
+\textbf{Backend \& APIs}{:  FastAPI, Flask, Node.js, Express.js, REST APIs} \\
+\textbf{Databases}{: MySQL, MongoDB} \\
+\textbf{Data \& AI}{: Pandas, NumPy, Scikit-learn, Matplotlib, TensorFlow, OpenCV, LangChain}\\
+\textbf{Frontend}{: HTML, CSS, React.js, React Native, Next.js} \\
+\textbf{Developer Tools}{: Git, Github, VS Code, Docker}
+}}
+\end{itemize}
+
+\section{Achievements \& Extracurricular Activities}
+\resumeItemListStart
+    \resumeItem{Participated in 8 national and international hackathons, winning 2 through innovative problem-solving and execution}
+    \resumeItem{Solved 350+ coding problems across platforms including \href{https://leetcode.com/u/saadziaatharkhan/}{\underline{LeetCode}} and participated in coding competitions at colleges}
+    \resumeItem{Volunteered with Prayas NGO to teach computer fundamentals and modern technology to children in rural and underserved communities, promoting digital literacy and awareness}
+    \resumeItem{Organized free medical camps to improve access to basic healthcare for underserved communities and donated blood to support emergency and life-saving medical needs}
+\resumeItemListEnd
+
+
+%-------------------------------------------
+\end{document}
