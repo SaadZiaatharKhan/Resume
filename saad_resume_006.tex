@@ -1,0 +1,263 @@
+%-------------------------
+% Resume in Latex
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+\usepackage{lmodern}
+%-------------------------
+% PACKAGES
+%-------------------------
+
+\usepackage{latexsym}
+
+% Page margins
+\usepackage[
+    top=0.12in,
+    bottom=0.12in,
+    left=0.25in,
+    right=0.25in
+]{geometry}
+
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+
+\input{glyphtounicode}
+
+%-------------------------
+% PAGE STYLE
+%-------------------------
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\raggedbottom
+\raggedright
+
+\setlength{\tabcolsep}{0in}
+
+\urlstyle{same}
+
+%-------------------------
+% SECTION FORMATTING
+%-------------------------
+
+\titleformat{\section}
+  {\scshape\raggedright\fontsize{12.5}{14}\selectfont}
+  {}{0pt}{}
+  [\color{black}\titlerule]
+
+\titlespacing*{\section}
+  {0pt}      % left
+  {5pt}      % space before section
+  {3pt}      % space after section
+
+%-------------------------
+% ATS / PDF TEXT
+%-------------------------
+
+\pdfgentounicode=1
+
+%-------------------------
+% CUSTOM COMMANDS
+%-------------------------
+
+\newcommand{\resumeItem}[1]{
+    \item\small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+    \item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        \textit{\small#3} & \textit{\small#4} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \textit{\small#1} & \textit{\small#2} \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+        \small#1 & #2 \\
+    \end{tabular*}
+}
+
+\newcommand{\resumeSubItem}[1]{
+    \resumeItem{#1}
+}
+
+%-------------------------
+% LIST FORMATTING
+%-------------------------
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{
+    \begin{itemize}[
+        leftmargin=0.15in,
+        label={},
+        topsep=1pt,
+        partopsep=0pt,
+        parsep=0pt,
+        itemsep=2pt
+    ]
+}
+
+\newcommand{\resumeSubHeadingListEnd}{
+    \end{itemize}
+}
+
+\newcommand{\resumeItemListStart}{
+    \begin{itemize}[
+        leftmargin=0.18in,
+        topsep=1pt,
+        partopsep=0pt,
+        parsep=0pt,
+        itemsep=0.5pt
+    ]
+}
+
+\newcommand{\resumeItemListEnd}{
+    \end{itemize}
+}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\fontsize{21}{24}\selectfont Saad Khan} \\ \vspace{1pt}
+    \small +91 9503665424 $|$ \href{mailto:saadziaatharkhan@gmail.com}{\underline{saadziaatharkhan@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/saadziakhan}{\underline{linkedin.com/in/saadziakhan}} $|$
+    \href{https://github.com/SaadZiaatharKhan}{\underline{github.com/SaadZiaatharKhan}}
+\end{center}
+
+\section{Summary}
+\small
+Full-Stack \& AI Engineer with 1+ year of internship experience delivering web and mobile applications. 2x hackathon winner across 8 national and international competitions, with experience building AI systems achieving 90\%+ accuracy. Experienced in Java, Python, React, backend APIs, SQL, and data structures.
+
+
+%-----------EDUCATION-----------
+
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Sinhgad College of Engineering}{Pune, Maharashtra}
+      {Bachelor of Engineering in Computer Science, Minor in Data Science \textbar\ CGPA: 8.23}{Aug. 2023 -- May 2027}
+    \resumeSubheading
+      {School of Scholars}{Nagpur, Maharashtra}
+      {Higher Secondary Education (Class XII) \textbar\ Percentage: 91.4\%}{2023}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Mobile Application Developer}{Jan. 2026 -- June 2026}
+      {InvizioX}{Mumbai, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Engineered InvizioX, a cross-platform mobile app using React Native and Expo, reducing load time by 30\%}
+        \resumeItem{Architected 7+ frontend modules for dashboards, portfolios, and transactions, reducing navigation time by 25\%}
+        \resumeItem{Built real-time analytics dashboards using WebSockets, improving portfolio monitoring efficiency by 40\%}
+        \resumeItem{Implemented a reusable UI component system using NativeWind, JavaScript, and Expo EAS, cutting feature development time by 30\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Full Stack Web Developer}{Nov. 2023 -- April 2024}
+      {E-Cell SCOE}{Pune, Maharashtra}
+      \resumeItemListStart
+        \resumeItem{Delivered full-stack applications for 3+ startups using React.js, Next.js, Node.js, Express.js, and Flask}
+        \resumeItem{Built responsive interfaces using React.js, JavaScript, and GSAP, increasing conversion rates by 30\%}
+        \resumeItem{Integrated SQL and Docker-based deployment, improving query performance by 35\%}
+        \resumeItem{Delivered 4 product launches and 10+ feature enhancements across client projects}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{{\href{https://github.com/SaadZiaatharKhan/Agriguardian}{\underline{AgriGuardian: AI Crop Disease Detection}}}} $|$ \emph{React Native, FastAPI, Python, OpenCV, TensorFlow, Supabase}}{}
+\resumeItemListStart
+\resumeItem{Built an AI-powered agriculture platform using React Native, FastAPI, and Supabase for crop monitoring}
+\resumeItem{Developed a CNN-based disease-detection pipeline using VGG16, InceptionV3, and ResNet50, achieving 94\% accuracy}
+\resumeItem{Integrated 6+ IoT sensors with weather data and 15-language localization for broader farmer accessibility}
+\resumeItem{Implemented AI-driven treatment and agro-shop recommendations using Gemini and LangChain}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/SaadZiaatharKhan/KMRL}{\underline{Document Intelligence Hub}}} $|$ \emph{Next.js, FastAPI, LangChain, FAISS, MySQL, Hugging Face}}{}
+\resumeItemListStart
+\resumeItem{Engineered an offline multimodal RAG platform supporting PDF, DOC, image, and audio retrieval}
+\resumeItem{Built OCR, speech-to-text, and vector search pipelines using FAISS, Whisper, LangChain and Hugging Face, achieving 90\%+ retrieval accuracy}
+\resumeItem{Implemented citation-backed semantic search using FastAPI, MySQL, Gemma, and Mistral}
+\resumeItem{Designed a scalable, offline-first architecture for secure knowledge retrieval and cross-modal search}
+\resumeItemListEnd
+
+\resumeProjectHeading
+{\textbf{\href{https://github.com/SaadZiaatharKhan/EchoGuide}{\underline{EchoGuide: AI Vision Assistant}}} $|$ \emph{Python, Computer Vision, YOLOv8, OpenCV, PyTorch, Deep Learning}}{}
+\resumeItemListStart
+\resumeItem{Designed a voice-assisted navigation tool for visually impaired users, improving mobility accuracy by 85\%}
+\resumeItem{Trained and deployed an object detection model using YOLOv8 and OpenCV, achieving 92\% accuracy for real-time alerts}
+\resumeItem{Built a face detection and recognition system reaching 95\% accuracy for real-time contextual feedback}
+\resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+
+\resumeSubHeadingListStart
+    \item
+    \small{
+        \textbf{Languages:} Java, C++, Python, JavaScript, TypeScript \\
+        \textbf{Core CS:} Object-Oriented Programming (OOP), Data Structures \& Algorithms, Database Management, Operating Systems, Software Engineering Principles, System Design, Computer Networks \\
+        \textbf{Backend \& APIs:} FastAPI, Flask, Node.js, Express.js, REST APIs \\
+        \textbf{Databases:} MySQL, MongoDB \\
+        \textbf{Data \& AI:} Pandas, NumPy, Scikit-learn, Matplotlib, TensorFlow, OpenCV, LangChain \\
+        \textbf{Frontend:} HTML, CSS, React.js, React Native, Next.js \\
+        \textbf{Developer Tools:} Git, GitHub, VS Code, Docker
+    }
+\resumeSubHeadingListEnd
+
+%-----------ACHIEVEMENTS-----------
+\section{Achievements \& Extracurricular Activities}
+
+\resumeSubHeadingListStart
+
+    \item
+    \resumeItemListStart
+        \resumeItem{Competed in 8 national and international hackathons, securing 2 wins through innovative problem-solving and rapid execution}
+        \resumeItem{Solved 350+ coding problems across \href{https://leetcode.com/u/saadziaatharkhan/}{\underline{LeetCode}} and other competitive programming platforms}
+        \resumeItem{Attended several workshops and technical sessions, including an international event DevConf.in organized by Red Hat. Helped organize workshops and awareness campaigns to promote learning, engagement, and community outreach on important topics}
+        \resumeItem{Volunteered with Prayas NGO to teach computer fundamentals and digital skills to children in rural and underserved communities; also organized free medical camps and blood donation drives supporting community healthcare}
+    \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}
